@@ -1,3 +1,5 @@
+-- u deserve this trash code if you are smart enough to get here :)
+
 -- what are these called again
 local Debris = game:GetService("Debris")
 local ProximityPromptService = game:GetService("ProximityPromptService")
