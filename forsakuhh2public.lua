@@ -1,4 +1,17 @@
--- u deserve this trash code if you are smart enough to get here :)
+-- [PROTECTED BY LITERALLY NOTHING V2]
+
+--[[
+
+You leveled up: skid -> skid who can read
+Bonus: +5 IQ
+
+OK in all seriousness, this code is open source because SOMEONE (moonsec) doesnt support continue.
+also being open source is sigma, so haw haw. 
+
+Feel free to use my code I literally dont care.
+
+Script by @22fourL 
+]]
 
 -- what are these called again
 local Debris = game:GetService("Debris")
@@ -13,6 +26,7 @@ local localPlayer = game.Players.LocalPlayer
 local killerfolder: Folder = workspace.Players.Killers
 local survivorfolder: Folder = workspace.Players.Survivors
 local ingamefolder: Folder = workspace.Map.Ingame
+-- todo: optimize aaaaaaaaaaaaaaaaaaaaaaaaaa
 local currentMap
 local killerESPWatch
 local survivorESPWatch
@@ -34,11 +48,10 @@ local listeners = {}
 local activeRBXScriptConnections = {}
 
 -- ring vars
-
 local player = Players.LocalPlayer
 local camera = workspace.CurrentCamera
 
--- === CONFIG FOR RING ===
+-- config
 local ringRadius = 150
 local minFadeDistance = 75
 local maxFadeDistance = 300
@@ -47,7 +60,6 @@ local useCollectionServiceTag = true
 local csTagName = "DirectionalTarget"
 local hideIfBehindCamera = false
 local syncInterval = 1.0
--- ================================
 
 -- internal state
 local indicatorPool = {}
@@ -342,7 +354,7 @@ local function getTargetPart(model)
 	return model:FindFirstChildWhichIsA("BasePart")
 end
 
--- sanitize clone: remove scripts for safety/perf
+-- script discrimination
 local function sanitizeClone(modelClone)
 	for _, v in ipairs(modelClone:GetDescendants()) do
 		if v:IsA("Script") or v:IsA("LocalScript") or v:IsA("ModuleScript") then
@@ -351,24 +363,18 @@ local function sanitizeClone(modelClone)
 	end
 end
 
--- rotate clone so its front faces the viewport camera (safe)
+-- ASHLEY, LOOK AT ME.
 local function makeModelFaceCamera(modelClone)
-	-- find some usable part (primary/humanoidroot/any basepart)
+	-- find the uhhhhhhhhhhhhh
 	local primary = modelClone.PrimaryPart or modelClone:FindFirstChild("HumanoidRootPart") or modelClone:FindFirstChildWhichIsA("BasePart")
 	if not primary then
-		-- nothing to rotate safely
+		-- uh oh
 		return
 	end
 
-	-- Our clones have already been moved so bounding center is at origin.
-	-- We want the model to face the viewport camera -> flip 180 degrees around Y.
-	-- Use SetPrimaryPartCFrame when possible; otherwise create a temporary primary part.
 	if modelClone.PrimaryPart then
-		-- set primary part to origin rotated by 180 deg
 		modelClone:SetPrimaryPartCFrame(CFrame.new(0, 0, 0) * CFrame.Angles(0, math.pi, 0))
 	else
-		-- create a temporary invisible anchored part at origin, assign it as PrimaryPart,
-		-- then use SetPrimaryPartCFrame to rotate the entire model, then remove temp.
 		local temp = Instance.new("Part")
 		temp.Name = "__TEMP_Primary"
 		temp.Size = Vector3.new(1,1,1)
@@ -377,19 +383,17 @@ local function makeModelFaceCamera(modelClone)
 		temp.CanCollide = false
 		temp.CFrame = CFrame.new(0,0,0)
 		temp.Parent = modelClone
-		-- set as PrimaryPart
 		modelClone.PrimaryPart = temp
-		-- rotate whole model around origin
 		modelClone:SetPrimaryPartCFrame(CFrame.new(0, 0, 0) * CFrame.Angles(0, math.pi, 0))
-		-- cleanup
 		modelClone.PrimaryPart = nil
 		temp:Destroy()
 	end
+	-- wall of configs ^
 end
 
 -- recenter model clone so its bounding box center is at origin and return approximate size magnitude
 local function frameModelToOrigin(modelClone)
-	-- try GetBoundingBox (better), fallback to averaging part positions
+	-- ooo pcall boundbingbox im so smart
 	local ok, bboxCF, bboxSize = pcall(function() return modelClone:GetBoundingBox() end)
 	if not ok or not bboxCF then
 		-- fallback
@@ -409,7 +413,7 @@ local function frameModelToOrigin(modelClone)
 		for _, p in ipairs(parts) do
 			maxMag = math.max(maxMag, p.Size.Magnitude)
 		end
-		-- attempt to rotate/model face
+		-- look at vro
 		makeModelFaceCamera(modelClone)
 		return math.max(maxMag, 0.001)
 	end
@@ -429,7 +433,7 @@ local function frameModelToOrigin(modelClone)
 	return math.max(sizeMag, 0.001)
 end
 
--- create or reuse a ViewportFrame indicator and clone the model into it
+-- yoink, your viewportFrame is mine
 local function borrowIndicator(screenGui, templateGui, model)
 	local ind = table.remove(indicatorPool)
 	if not ind then
@@ -463,15 +467,12 @@ local function borrowIndicator(screenGui, templateGui, model)
 		distText.Parent = ind
 	end
 
-	-- clone model and prepare for viewport
 	local clone = model:Clone()
 	sanitizeClone(clone)
 	clone.Parent = ind
 
-	-- recenter and frame
 	local sizeMag = frameModelToOrigin(clone)
 
-	-- position viewport camera in front of the model looking at origin
 	local cam = ind:FindFirstChild("ViewportCamera")
 	if cam then
 		local forwardDistance = math.max(1, sizeMag * 0.8)
@@ -485,7 +486,7 @@ local function borrowIndicator(screenGui, templateGui, model)
 	return ind, clone
 end
 
--- clean up a pooled indicator (destroy clones inside)
+-- who wrote this, oh wait its me 🥲
 local function returnIndicator(ind)
 	if not ind then return end
 	for _, child in ipairs(ind:GetChildren()) do
@@ -500,7 +501,7 @@ local function returnIndicator(ind)
 	table.insert(indicatorPool, ind)
 end
 
--- gather target models (tagged or in workspace folder)
+-- gather killerfolder and survivorfolder
 local function gatherTargets()
 	local results = {}
 	if useCollectionServiceTag then
@@ -509,7 +510,6 @@ local function gatherTargets()
 		end
 	end
 	
-	-- Two team folders we’ll track
 	local trackedFolders = {
 		killerfolder,
 		survivorfolder,
@@ -533,7 +533,7 @@ local function gatherTargets()
 				if folder and folder:IsA("Folder") then
 					for _, item in ipairs(folder:GetChildren()) do
 						if item and item:IsA("Model") then
-							-- avoid duplicates
+							-- duplicate? nah.
 							local dup = false
 							for _, v in ipairs(results) do if v == item then dup = true; break end end
 							if not dup then table.insert(results, item) end
@@ -561,7 +561,7 @@ local function syncActiveTargets(screenGui, templateGui)
 			end
 		end
 	end
-	-- remove unwanted
+	-- remove the
 	for model, data in pairs(activeIndicators) do
 		if not wanted[model] or not data.model or not data.part then
 			if data.indicator then returnIndicator(data.indicator) end
@@ -570,10 +570,8 @@ local function syncActiveTargets(screenGui, templateGui)
 	end
 end
 
--- Main toggle function
+-- AAA WALL OF ####
 local function ToggleDirectionalIndicators(enabled, screenGui, templateGui)
-	-- screenGui: ScreenGui instance where indicators will be parented
-	-- templateGui (optional): any GuiObject used for ZIndex/visual reference (can be nil)
 	if enabled and not running then
 		if not screenGui or not screenGui:IsA("ScreenGui") then
 			error("ToggleDirectionalIndicators: screenGui must be a ScreenGui")
@@ -592,7 +590,6 @@ local function ToggleDirectionalIndicators(enabled, screenGui, templateGui)
 
 			if not next(activeIndicators) then return end
 
-			-- compute GUI center in absolute screen coords (fallback to viewport center)
 			local guiCenter
 			local okCenter = false
 			if screenGui.AbsoluteSize and screenGui.AbsoluteSize.Magnitude > 0 then
@@ -613,14 +610,14 @@ local function ToggleDirectionalIndicators(enabled, screenGui, templateGui)
 				local part = data.part
 				local ind = data.indicator
 
-				-- if part is gone, recycle
+				-- wow optimization (once in a blue moon)
 				if not part.Parent then
 					returnIndicator(ind)
 					activeIndicators[model] = nil
 					continue
 				end
 
-				-- camera-based horizontal yaw (ignores pitch)
+				-- gross math with orientations
 				local camCF = camera.CFrame
 				local camPos = camCF.Position
 				local toTarget = (part.Position - camPos)
@@ -638,16 +635,16 @@ local function ToggleDirectionalIndicators(enabled, screenGui, templateGui)
 
 				local angle = math.atan2(-camRight:Dot(flatTarget), camForward:Dot(flatTarget))
 
-				-- user-chosen orientation
+				-- orienttation ring
 				local x = -math.sin(angle) * ringRadius
 				local y = -math.cos(angle) * ringRadius
-
-				-- position relative to ScreenGui center
+				
+				-- p = position
 				local px = math.floor(guiCenter.X + x + 0.5)
 				local py = math.floor(guiCenter.Y + y + 0.5)
 				ind.Position = UDim2.fromOffset(px, py)
 
-				-- behind-camera check using WorldToViewportPoint
+				-- scrapped behind-camera, might make a toggle idfk
 				local _, onScreen = camera:WorldToViewportPoint(part.Position)
 				if hideIfBehindCamera and not onScreen then
 					ind.Visible = false
@@ -662,13 +659,12 @@ local function ToggleDirectionalIndicators(enabled, screenGui, templateGui)
 					distLabel.Text = string.format("%d", math.floor(dist))
 				end
 
-				-- fade & scale
+				-- fade and scale
 				local t = clamp((dist - minFadeDistance) / math.max(1, (maxFadeDistance - minFadeDistance)), 0, 1)
 				local alpha = 1 - t -- 1 = near, 0 = far
 				local sizeScale = 0.6 + 0.4 * alpha
 				ind.Size = UDim2.fromOffset(baseIndicatorSize * sizeScale, baseIndicatorSize * sizeScale)
 
-				-- fade using ImageTransparency on the ViewportFrame
 				ind.ImageTransparency = 1 - alpha
 
 				if distLabel then
@@ -825,7 +821,7 @@ local warnlabel = i:CreateLabel("For this to take full effect, make sure every h
 
 -- // objects for Safe Functions //
 
-local unnamedLabel = sf:CreateLabel("Ring Configurations", "cog")
+local unnamedLabel = sf:CreateLabel("Compass Ring [beta]", "compass")
 
 local ringCircleSize = sf:CreateSlider({
 	Name = "Ring Radius",
@@ -869,12 +865,13 @@ local ringEnabled = sf:CreateToggle({
 		else
 			
 		end
-		-- this is what were editing
+		
+		-- this is what the uhhh
 		ToggleDirectionalIndicators(Value, probGUI, nil)
 	end,
 })
 
-local unnamedLabel = sf:CreateLabel("Highlight Configurations", "cog")
+local unnamedLabel = sf:CreateLabel("Highlights", "eye")
 
 local fillTransparency = sf:CreateSlider({
 	Name = "Highlight Fill Transparency",
