@@ -530,9 +530,19 @@ local function gatherTargets()
 		for _, model in ipairs(folder:GetChildren()) do
 			if model:IsA("Model") then
 				
+				-- skip local player's character
+				if model == player.Character then
+					continue
+				end
+				
 				if folder and folder:IsA("Folder") then
 					for _, item in ipairs(folder:GetChildren()) do
 						if item and item:IsA("Model") then
+							
+							if item == player.Character then
+								continue
+							end
+							
 							-- duplicate? nah.
 							local dup = false
 							for _, v in ipairs(results) do if v == item then dup = true; break end end
@@ -817,7 +827,7 @@ local shutdown = i:CreateButton({
 	end,
 })
 
-local warnlabel = i:CreateLabel("For this to take full effect, make sure every highlight toggle is disabled.", "traffic-cone")
+-- local warnlabel = i:CreateLabel("For this to take full effect, make sure every highlight toggle is disabled.", "traffic-cone")
 
 -- // objects for Safe Functions //
 
@@ -825,7 +835,7 @@ local unnamedLabel = sf:CreateLabel("Compass Ring [beta]", "compass")
 
 local ringCircleSize = sf:CreateSlider({
 	Name = "Ring Radius",
-	Range = {100, 250},
+	Range = {100, 300},
 	Increment = 10,
 	Suffix = "Pixels",
 	CurrentValue = 150,
