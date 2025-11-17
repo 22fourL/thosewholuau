@@ -10,6 +10,8 @@ also being open source is sigma, so haw haw.
 
 Feel free to use my code I literally dont care.
 
+beware: bad code
+
 Script by @22fourL 
 ]]
 
@@ -60,6 +62,7 @@ local useCollectionServiceTag = true
 local csTagName = "DirectionalTarget"
 local hideIfBehindCamera = false
 local syncInterval = 1.0
+local HUBNAME = "Pexsaken" -- just because im indecisive as hell lmao
 
 -- internal state
 local indicatorPool = {}
@@ -702,7 +705,7 @@ end
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
 local Window = Rayfield:CreateWindow({
-	Name = "🎃 Forsakuhh Whatever",
+	Name = "🎃 " .. HUBNAME,
 	Icon = "scroll-text", -- Icon in Topbar. Can use Lucide Icons (string) or Roblox Image (number). 0 to use no icon (default).
 	LoadingTitle = "Hey " .. localPlayer.DisplayName .. "! thx for using my gui :)",
 	LoadingSubtitle = "Those who snow",
@@ -718,7 +721,7 @@ local Window = Rayfield:CreateWindow({
 -- for stupid people
 if game.PlaceId ~= 18687417158 then
 	Rayfield:Notify({
-		Title = "Forsakuhh Whatever",
+		Title = HUBNAME,
 		Content = "Unsupported game!!1!, Shutting down...",
 		Duration = 3,
 		Image = "triangle-alert",
@@ -772,7 +775,7 @@ local shutdown = i:CreateButton({
 	Name = "Shut down GUI & processes",
 	Callback = function()
 		Rayfield:Notify({
-			Title = "Forsakuhh Whatever",
+			Title = HUBNAME,
 			Content = "Shutting down... This may lag your game.",
 			Duration = 1,
 			Image = "loader-circle",
@@ -815,7 +818,7 @@ local shutdown = i:CreateButton({
 		end
 		
 		Rayfield:Notify({
-			Title = "Forsakuhh Whatever",
+			Title = HUBNAME,
 			Content = "Shut down successfully :D",
 			Duration = 2,
 			Image = "check",
@@ -993,13 +996,13 @@ local miscESP = sf:CreateToggle({
 })
 
 local genESP = sf:CreateToggle({
-	Name = "Highlight generators",
+	Name = "Highlight generators [mega wip]",
 	CurrentValue = false,
 	Flag = "Toggle1",
 	Callback = function(Value)
 		if currentMap == nil then
 			Rayfield:Notify({
-				Title = "Forsakuhh Whatever",
+				Title = HUBNAME,
 				Content = "Wait until the map exists, then re-enable.",
 				Duration = 3,
 				Image = "triangle-alert",
@@ -1057,7 +1060,7 @@ local eventESP = sf:CreateToggle({
 		
 		if currencyFolder == nil then
 			Rayfield:Notify({
-				Title = "Forsakuhh Whatever",
+				Title = HUBNAME,
 				Content = "The folder for collectables doesnt exist, wait a bit then re-enable.",
 				Duration = 3,
 				Image = "triangle-alert",
@@ -1077,7 +1080,7 @@ local eventESP = sf:CreateToggle({
 			
 			eventRemovingWatch = currencyFolder.Destroying:Once(function()
 				Rayfield:Notify({
-					Title = "Forsakuhh Whatever",
+					Title = HUBNAME,
 					Content = "There are no more collectables! Turn off the toggle when your ready.",
 					Duration = 3,
 					Image = "info",
@@ -1170,7 +1173,7 @@ local autoGen = uf:CreateToggle({
 		
 		if currentMap == nil then
 			Rayfield:Notify({
-				Title = "Forsakuhh Whatever",
+				Title = HUBNAME,
 				Content = "Wait until the map exists, then re-enable.",
 				Duration = 3,
 				Image = "triangle-alert",
