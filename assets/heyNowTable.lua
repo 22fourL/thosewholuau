@@ -30,16 +30,16 @@ return {
 									["CFrame"] = CFrame.new(-0.04,-0.02,0.05) * CFrame.Angles(math.rad(19.77),math.rad(2.74),math.rad(19.41)),
 									["EasingDirection"] = Enum.EasingDirection.In
 								},
-								["Left Arm"] = {
-									["EasingStyle"] = Enum.EasingStyle.Linear,
-									["Weight"] = 1,
-									["CFrame"] = CFrame.new(-0.07,-0.06,-0.11) * CFrame.Angles(math.rad(-53.38),math.rad(72.33),math.rad(56.74)),
-									["EasingDirection"] = Enum.EasingDirection.In
-								},
 								["Right Leg"] = {
 									["EasingStyle"] = Enum.EasingStyle.Linear,
 									["Weight"] = 1,
 									["CFrame"] = CFrame.new(0.73,1.2,-0.29) * CFrame.Angles(math.rad(-21.18),math.rad(-26.71),math.rad(2.84)),
+									["EasingDirection"] = Enum.EasingDirection.In
+								},
+								["Left Arm"] = {
+									["EasingStyle"] = Enum.EasingStyle.Linear,
+									["Weight"] = 1,
+									["CFrame"] = CFrame.new(-0.07,-0.06,-0.11) * CFrame.Angles(math.rad(-53.38),math.rad(72.33),math.rad(56.74)),
 									["EasingDirection"] = Enum.EasingDirection.In
 								}
 							},
@@ -81,16 +81,16 @@ return {
 									["CFrame"] = CFrame.new(-0.05,-0.02,-0.02) * CFrame.Angles(math.rad(24.75),math.rad(-0.21),math.rad(20.4)),
 									["EasingDirection"] = Enum.EasingDirection.In
 								},
-								["Left Arm"] = {
-									["EasingStyle"] = Enum.EasingStyle.Linear,
-									["Weight"] = 1,
-									["CFrame"] = CFrame.new(-0.09,-0.2,-0.17) * CFrame.Angles(math.rad(-41.58),math.rad(73.7),math.rad(46.98)),
-									["EasingDirection"] = Enum.EasingDirection.In
-								},
 								["Right Leg"] = {
 									["EasingStyle"] = Enum.EasingStyle.Linear,
 									["Weight"] = 1,
 									["CFrame"] = CFrame.new(0.73,1.29,-0.3) * CFrame.Angles(math.rad(-12.99),math.rad(-26.49),math.rad(1.86)),
+									["EasingDirection"] = Enum.EasingDirection.In
+								},
+								["Left Arm"] = {
+									["EasingStyle"] = Enum.EasingStyle.Linear,
+									["Weight"] = 1,
+									["CFrame"] = CFrame.new(-0.09,-0.2,-0.17) * CFrame.Angles(math.rad(-41.58),math.rad(73.7),math.rad(46.98)),
 									["EasingDirection"] = Enum.EasingDirection.In
 								}
 							},
@@ -132,16 +132,16 @@ return {
 									["CFrame"] = CFrame.new(-0.04,-0.02,0.04) * CFrame.Angles(math.rad(18.3),math.rad(5.27),math.rad(18.6)),
 									["EasingDirection"] = Enum.EasingDirection.In
 								},
-								["Left Arm"] = {
-									["EasingStyle"] = Enum.EasingStyle.Linear,
-									["Weight"] = 1,
-									["CFrame"] = CFrame.new(-0.04,-0.02,-0.07) * CFrame.Angles(math.rad(-56.94),math.rad(71.7),math.rad(60.28)),
-									["EasingDirection"] = Enum.EasingDirection.In
-								},
 								["Right Leg"] = {
 									["EasingStyle"] = Enum.EasingStyle.Linear,
 									["Weight"] = 1,
 									["CFrame"] = CFrame.new(0.72,1.21,-0.29) * CFrame.Angles(math.rad(-24.87),math.rad(-26.69),math.rad(2.78)),
+									["EasingDirection"] = Enum.EasingDirection.In
+								},
+								["Left Arm"] = {
+									["EasingStyle"] = Enum.EasingStyle.Linear,
+									["Weight"] = 1,
+									["CFrame"] = CFrame.new(-0.04,-0.02,-0.07) * CFrame.Angles(math.rad(-56.94),math.rad(71.7),math.rad(60.28)),
 									["EasingDirection"] = Enum.EasingDirection.In
 								}
 							},
@@ -183,16 +183,16 @@ return {
 									["CFrame"] = CFrame.new(-0.05,-0.02,0.01) * CFrame.Angles(math.rad(24.43),math.rad(-0.34),math.rad(20.47)),
 									["EasingDirection"] = Enum.EasingDirection.In
 								},
-								["Left Arm"] = {
-									["EasingStyle"] = Enum.EasingStyle.Linear,
-									["Weight"] = 1,
-									["CFrame"] = CFrame.new(-0.09,-0.18,-0.17) * CFrame.Angles(math.rad(-41.3),math.rad(73.96),math.rad(47.32)),
-									["EasingDirection"] = Enum.EasingDirection.In
-								},
 								["Right Leg"] = {
 									["EasingStyle"] = Enum.EasingStyle.Linear,
 									["Weight"] = 1,
 									["CFrame"] = CFrame.new(0.73,1.27,-0.3) * CFrame.Angles(math.rad(-13.47),math.rad(-26.66),math.rad(2.66)),
+									["EasingDirection"] = Enum.EasingDirection.In
+								},
+								["Left Arm"] = {
+									["EasingStyle"] = Enum.EasingStyle.Linear,
+									["Weight"] = 1,
+									["CFrame"] = CFrame.new(-0.09,-0.18,-0.17) * CFrame.Angles(math.rad(-41.3),math.rad(73.96),math.rad(47.32)),
 									["EasingDirection"] = Enum.EasingDirection.In
 								}
 							},
@@ -234,16 +234,16 @@ return {
 									["CFrame"] = CFrame.new(-0.04,-0.02,0.03) * CFrame.Angles(math.rad(18.43),math.rad(6.02),math.rad(18.32)),
 									["EasingDirection"] = Enum.EasingDirection.In
 								},
-								["Left Arm"] = {
-									["EasingStyle"] = Enum.EasingStyle.Linear,
-									["Weight"] = 1,
-									["CFrame"] = CFrame.new(-0.03,-0.01,-0.05) * CFrame.Angles(math.rad(-57.04),math.rad(71.8),math.rad(61.32)),
-									["EasingDirection"] = Enum.EasingDirection.In
-								},
 								["Right Leg"] = {
 									["EasingStyle"] = Enum.EasingStyle.Linear,
 									["Weight"] = 1,
 									["CFrame"] = CFrame.new(0.72,1.24,-0.3) * CFrame.Angles(math.rad(-25.89),math.rad(-26.71),math.rad(2.83)),
+									["EasingDirection"] = Enum.EasingDirection.In
+								},
+								["Left Arm"] = {
+									["EasingStyle"] = Enum.EasingStyle.Linear,
+									["Weight"] = 1,
+									["CFrame"] = CFrame.new(-0.03,-0.01,-0.05) * CFrame.Angles(math.rad(-57.04),math.rad(71.8),math.rad(61.32)),
 									["EasingDirection"] = Enum.EasingDirection.In
 								}
 							},
@@ -273,12 +273,6 @@ return {
 									["CFrame"] = CFrame.new(0.33,-0.14,-0.17) * CFrame.Angles(math.rad(12.45),math.rad(51.81),math.rad(-7.66)),
 									["EasingDirection"] = Enum.EasingDirection.In
 								},
-								["Right Leg"] = {
-									["EasingStyle"] = Enum.EasingStyle.Linear,
-									["Weight"] = 1,
-									["CFrame"] = CFrame.new(0.72,1.32,-0.31) * CFrame.Angles(math.rad(-26.39),math.rad(-26.69),math.rad(2.77)),
-									["EasingDirection"] = Enum.EasingDirection.In
-								},
 								["Right Arm"] = {
 									["EasingStyle"] = Enum.EasingStyle.Linear,
 									["Weight"] = 1,
@@ -289,6 +283,18 @@ return {
 									["EasingStyle"] = Enum.EasingStyle.Linear,
 									["Weight"] = 1,
 									["CFrame"] = CFrame.new(-0.04,-0.02,0.01) * CFrame.Angles(math.rad(20.3),math.rad(5.84),math.rad(18.17)),
+									["EasingDirection"] = Enum.EasingDirection.In
+								},
+								["Right Leg"] = {
+									["EasingStyle"] = Enum.EasingStyle.Linear,
+									["Weight"] = 1,
+									["CFrame"] = CFrame.new(0.72,1.32,-0.31) * CFrame.Angles(math.rad(-26.39),math.rad(-26.69),math.rad(2.77)),
+									["EasingDirection"] = Enum.EasingDirection.In
+								},
+								["Left Arm"] = {
+									["EasingStyle"] = Enum.EasingStyle.Linear,
+									["Weight"] = 1,
+									["CFrame"] = CFrame.Angles(math.rad(-54.99),math.rad(72.61),math.rad(62.48)),
 									["EasingDirection"] = Enum.EasingDirection.In
 								}
 							},
@@ -330,16 +336,16 @@ return {
 									["CFrame"] = CFrame.new(-0.04,-0.02,0.04) * CFrame.Angles(math.rad(21.09),math.rad(1.47),math.rad(19.83)),
 									["EasingDirection"] = Enum.EasingDirection.In
 								},
-								["Left Arm"] = {
-									["EasingStyle"] = Enum.EasingStyle.Linear,
-									["Weight"] = 1,
-									["CFrame"] = CFrame.new(-0.08,-0.09,-0.13) * CFrame.Angles(math.rad(-49.97),math.rad(72.93),math.rad(54.17)),
-									["EasingDirection"] = Enum.EasingDirection.In
-								},
 								["Right Leg"] = {
 									["EasingStyle"] = Enum.EasingStyle.Linear,
 									["Weight"] = 1,
 									["CFrame"] = CFrame.new(0.73,1.21,-0.29) * CFrame.Angles(math.rad(-18.83),math.rad(-26.75),math.rad(3.01)),
+									["EasingDirection"] = Enum.EasingDirection.In
+								},
+								["Left Arm"] = {
+									["EasingStyle"] = Enum.EasingStyle.Linear,
+									["Weight"] = 1,
+									["CFrame"] = CFrame.new(-0.08,-0.09,-0.13) * CFrame.Angles(math.rad(-49.97),math.rad(72.93),math.rad(54.17)),
 									["EasingDirection"] = Enum.EasingDirection.In
 								}
 							},
@@ -381,16 +387,16 @@ return {
 									["CFrame"] = CFrame.new(-0.05,-0.02,-0.05) * CFrame.Angles(math.rad(24.66),math.rad(0.23),math.rad(20.19)),
 									["EasingDirection"] = Enum.EasingDirection.In
 								},
-								["Left Arm"] = {
-									["EasingStyle"] = Enum.EasingStyle.Linear,
-									["Weight"] = 1,
-									["CFrame"] = CFrame.new(-0.08,-0.21,-0.16) * CFrame.Angles(math.rad(-43.57),math.rad(73.15),math.rad(47.68)),
-									["EasingDirection"] = Enum.EasingDirection.In
-								},
 								["Right Leg"] = {
 									["EasingStyle"] = Enum.EasingStyle.Linear,
 									["Weight"] = 1,
 									["CFrame"] = CFrame.new(0.73,1.31,-0.3) * CFrame.Angles(math.rad(-13.17),math.rad(-26.25),math.rad(0.71)),
+									["EasingDirection"] = Enum.EasingDirection.In
+								},
+								["Left Arm"] = {
+									["EasingStyle"] = Enum.EasingStyle.Linear,
+									["Weight"] = 1,
+									["CFrame"] = CFrame.new(-0.08,-0.21,-0.16) * CFrame.Angles(math.rad(-43.57),math.rad(73.15),math.rad(47.68)),
 									["EasingDirection"] = Enum.EasingDirection.In
 								}
 							},
@@ -432,16 +438,16 @@ return {
 									["CFrame"] = CFrame.new(-0.06,-0.02,-0.16) * CFrame.Angles(math.rad(22.85),math.rad(2.77),math.rad(19.1)),
 									["EasingDirection"] = Enum.EasingDirection.In
 								},
-								["Left Arm"] = {
-									["EasingStyle"] = Enum.EasingStyle.Linear,
-									["Weight"] = 1,
-									["CFrame"] = CFrame.new(-0.05,-0.21,-0.12) * CFrame.Angles(math.rad(-54.46),math.rad(70.19),math.rad(52.12)),
-									["EasingDirection"] = Enum.EasingDirection.In
-								},
 								["Right Leg"] = {
 									["EasingStyle"] = Enum.EasingStyle.Linear,
 									["Weight"] = 1,
 									["CFrame"] = CFrame.new(0.73,1.36,-0.3) * CFrame.Angles(math.rad(-16.12),math.rad(-25.09),math.rad(-4.01)),
+									["EasingDirection"] = Enum.EasingDirection.In
+								},
+								["Left Arm"] = {
+									["EasingStyle"] = Enum.EasingStyle.Linear,
+									["Weight"] = 1,
+									["CFrame"] = CFrame.new(-0.05,-0.21,-0.12) * CFrame.Angles(math.rad(-54.46),math.rad(70.19),math.rad(52.12)),
 									["EasingDirection"] = Enum.EasingDirection.In
 								}
 							},
@@ -459,6 +465,57 @@ return {
 			},
 			["Markers"] = {}
 		},
+		[0.57] = {
+			["Poses"] = {
+				["HumanoidRootPart"] = {
+					["EasingStyle"] = Enum.EasingStyle.Linear,
+					["Weight"] = 0,
+					["CFrame"] = CFrame.new(),
+					["SubPoses"] = {
+						["Torso"] = {
+							["EasingStyle"] = Enum.EasingStyle.Linear,
+							["Weight"] = 1,
+							["CFrame"] = CFrame.new(0.06,0,-0.12) * CFrame.Angles(math.rad(-2.83),math.rad(-4.2),math.rad(-25.61)),
+							["SubPoses"] = {
+								["Left Leg"] = {
+									["EasingStyle"] = Enum.EasingStyle.Linear,
+									["Weight"] = 1,
+									["CFrame"] = CFrame.new(0.32,0.05,-0.15) * CFrame.Angles(math.rad(-7.44),math.rad(51.39),math.rad(1.86)),
+									["EasingDirection"] = Enum.EasingDirection.In
+								},
+								["Right Arm"] = {
+									["EasingStyle"] = Enum.EasingStyle.Linear,
+									["Weight"] = 1,
+									["CFrame"] = CFrame.new(0.01,-0.3,0.5) * CFrame.Angles(math.rad(-63.72),math.rad(40.01),math.rad(133.13)),
+									["EasingDirection"] = Enum.EasingDirection.In
+								},
+								["Head"] = {
+									["EasingStyle"] = Enum.EasingStyle.Linear,
+									["Weight"] = 1,
+									["CFrame"] = CFrame.new(-0.05,-0.02,-0.13) * CFrame.Angles(math.rad(22.62),math.rad(3.24),math.rad(18.94)),
+									["EasingDirection"] = Enum.EasingDirection.In
+								},
+								["Right Leg"] = {
+									["EasingStyle"] = Enum.EasingStyle.Linear,
+									["Weight"] = 1,
+									["CFrame"] = CFrame.new(0.73,1.36,-0.3) * CFrame.Angles(math.rad(-18.14),math.rad(-25.32),math.rad(-2.66)),
+									["EasingDirection"] = Enum.EasingDirection.In
+								},
+								["Left Arm"] = {
+									["EasingStyle"] = Enum.EasingStyle.Linear,
+									["Weight"] = 1,
+									["CFrame"] = CFrame.new(-0.04,-0.17,-0.1) * CFrame.Angles(math.rad(-54.13),math.rad(70.78),math.rad(54.15)),
+									["EasingDirection"] = Enum.EasingDirection.In
+								}
+							},
+							["EasingDirection"] = Enum.EasingDirection.In
+						}
+					},
+					["EasingDirection"] = Enum.EasingDirection.In
+				}
+			},
+			["Markers"] = {}
+		},
 		[0.43] = {
 			["Poses"] = {
 				["HumanoidRootPart"] = {
@@ -468,13 +525,31 @@ return {
 					["SubPoses"] = {
 						["Torso"] = {
 							["EasingStyle"] = Enum.EasingStyle.Linear,
-							["Weight"] = 0,
-							["CFrame"] = CFrame.new(),
+							["Weight"] = 1,
+							["CFrame"] = CFrame.new(0.34,0,-0.04) * CFrame.Angles(math.rad(-2.84),math.rad(-7.77),math.rad(-25.85)),
 							["SubPoses"] = {
+								["Left Leg"] = {
+									["EasingStyle"] = Enum.EasingStyle.Linear,
+									["Weight"] = 1,
+									["CFrame"] = CFrame.new(0.33,-0.17,-0.17) * CFrame.Angles(math.rad(13.01),math.rad(51.8),math.rad(-7.93)),
+									["EasingDirection"] = Enum.EasingDirection.In
+								},
 								["Left Arm"] = {
 									["EasingStyle"] = Enum.EasingStyle.Linear,
 									["Weight"] = 1,
 									["CFrame"] = CFrame.new(-0.02,-0,-0.04) * CFrame.Angles(math.rad(-56.33),math.rad(72.12),math.rad(62.04)),
+									["EasingDirection"] = Enum.EasingDirection.In
+								},
+								["Right Arm"] = {
+									["EasingStyle"] = Enum.EasingStyle.Linear,
+									["Weight"] = 1,
+									["CFrame"] = CFrame.new(-0.02,-0.32,0.44) * CFrame.Angles(math.rad(-53.82),math.rad(42.76),math.rad(130.62)),
+									["EasingDirection"] = Enum.EasingDirection.In
+								},
+								["Head"] = {
+									["EasingStyle"] = Enum.EasingStyle.Linear,
+									["Weight"] = 1,
+									["CFrame"] = CFrame.new(-0.04,-0.02,0.02) * CFrame.Angles(math.rad(19.13),math.rad(6.19),math.rad(18.18)),
 									["EasingDirection"] = Enum.EasingDirection.In
 								}
 							},
@@ -516,16 +591,67 @@ return {
 									["CFrame"] = CFrame.new(-0.05,-0.02,-0.08) * CFrame.Angles(math.rad(24.25),math.rad(0.93),math.rad(19.88)),
 									["EasingDirection"] = Enum.EasingDirection.In
 								},
+								["Right Leg"] = {
+									["EasingStyle"] = Enum.EasingStyle.Linear,
+									["Weight"] = 1,
+									["CFrame"] = CFrame.new(0.73,1.33,-0.3) * CFrame.Angles(math.rad(-13.86),math.rad(-25.93),math.rad(-0.71)),
+									["EasingDirection"] = Enum.EasingDirection.In
+								},
 								["Left Arm"] = {
 									["EasingStyle"] = Enum.EasingStyle.Linear,
 									["Weight"] = 1,
 									["CFrame"] = CFrame.new(-0.07,-0.21,-0.15) * CFrame.Angles(math.rad(-46.74),math.rad(72.34),math.rad(49.02)),
 									["EasingDirection"] = Enum.EasingDirection.In
+								}
+							},
+							["EasingDirection"] = Enum.EasingDirection.In
+						}
+					},
+					["EasingDirection"] = Enum.EasingDirection.In
+				}
+			},
+			["Markers"] = {}
+		},
+		[0.53] = {
+			["Poses"] = {
+				["HumanoidRootPart"] = {
+					["EasingStyle"] = Enum.EasingStyle.Linear,
+					["Weight"] = 0,
+					["CFrame"] = CFrame.new(),
+					["SubPoses"] = {
+						["Torso"] = {
+							["EasingStyle"] = Enum.EasingStyle.Linear,
+							["Weight"] = 1,
+							["CFrame"] = CFrame.new(0.17,0,-0.11) * CFrame.Angles(math.rad(-2.84),math.rad(-6.34),math.rad(-25.72)),
+							["SubPoses"] = {
+								["Left Leg"] = {
+									["EasingStyle"] = Enum.EasingStyle.Linear,
+									["Weight"] = 1,
+									["CFrame"] = CFrame.new(0.33,-0.03,-0.16) * CFrame.Angles(math.rad(1.78),math.rad(51.84),math.rad(-2.53)),
+									["EasingDirection"] = Enum.EasingDirection.In
+								},
+								["Right Arm"] = {
+									["EasingStyle"] = Enum.EasingStyle.Linear,
+									["Weight"] = 1,
+									["CFrame"] = CFrame.new(-0.01,-0.3,0.46) * CFrame.Angles(math.rad(-55.92),math.rad(42.4),math.rad(130.76)),
+									["EasingDirection"] = Enum.EasingDirection.In
+								},
+								["Head"] = {
+									["EasingStyle"] = Enum.EasingStyle.Linear,
+									["Weight"] = 1,
+									["CFrame"] = CFrame.new(-0.05,-0.02,-0.06) * CFrame.Angles(math.rad(22.17),math.rad(4.19),math.rad(18.6)),
+									["EasingDirection"] = Enum.EasingDirection.In
 								},
 								["Right Leg"] = {
 									["EasingStyle"] = Enum.EasingStyle.Linear,
 									["Weight"] = 1,
-									["CFrame"] = CFrame.new(0.73,1.33,-0.3) * CFrame.Angles(math.rad(-13.86),math.rad(-25.93),math.rad(-0.71)),
+									["CFrame"] = CFrame.new(0.73,1.36,-0.31) * CFrame.Angles(math.rad(-22.17),math.rad(-25.9),math.rad(0.01)),
+									["EasingDirection"] = Enum.EasingDirection.In
+								},
+								["Left Arm"] = {
+									["EasingStyle"] = Enum.EasingStyle.Linear,
+									["Weight"] = 1,
+									["CFrame"] = CFrame.new(-0.02,-0.09,-0.05) * CFrame.Angles(math.rad(-53.64),math.rad(71.96),math.rad(58.35)),
 									["EasingDirection"] = Enum.EasingDirection.In
 								}
 							},
@@ -567,136 +693,22 @@ return {
 									["CFrame"] = CFrame.new(-0.05,-0.02,-0.12) * CFrame.Angles(math.rad(23.59),math.rad(1.81),math.rad(19.5)),
 									["EasingDirection"] = Enum.EasingDirection.In
 								},
-								["Left Arm"] = {
-									["EasingStyle"] = Enum.EasingStyle.Linear,
-									["Weight"] = 1,
-									["CFrame"] = CFrame.new(-0.06,-0.21,-0.14) * CFrame.Angles(math.rad(-50.61),math.rad(71.32),math.rad(50.65)),
-									["EasingDirection"] = Enum.EasingDirection.In
-								},
 								["Right Leg"] = {
 									["EasingStyle"] = Enum.EasingStyle.Linear,
 									["Weight"] = 1,
 									["CFrame"] = CFrame.new(0.73,1.35,-0.3) * CFrame.Angles(math.rad(-14.94),math.rad(-25.54),math.rad(-2.33)),
 									["EasingDirection"] = Enum.EasingDirection.In
-								}
-							},
-							["EasingDirection"] = Enum.EasingDirection.In
-						}
-					},
-					["EasingDirection"] = Enum.EasingDirection.In
-				}
-			},
-			["Markers"] = {}
-		},
-		[0.5] = {
-			["Poses"] = {
-				["HumanoidRootPart"] = {
-					["EasingStyle"] = Enum.EasingStyle.Linear,
-					["Weight"] = 0,
-					["CFrame"] = CFrame.new(),
-					["SubPoses"] = {
-						["Torso"] = {
-							["EasingStyle"] = Enum.EasingStyle.Linear,
-							["Weight"] = 1,
-							["CFrame"] = CFrame.new(0.28,0,-0.1) * CFrame.Angles(math.rad(-2.85),math.rad(-8.48),math.rad(-25.82)),
-							["SubPoses"] = {
-								["Left Leg"] = {
-									["EasingStyle"] = Enum.EasingStyle.Linear,
-									["Weight"] = 1,
-									["CFrame"] = CFrame.new(0.33,-0.1,-0.16) * CFrame.Angles(math.rad(11.07),math.rad(51.85),math.rad(-7)),
-									["EasingDirection"] = Enum.EasingDirection.In
-								},
-								["Right Arm"] = {
-									["EasingStyle"] = Enum.EasingStyle.Linear,
-									["Weight"] = 1,
-									["CFrame"] = CFrame.new(-0.02,-0.3,0.43) * CFrame.Angles(math.rad(-47.7),math.rad(44.51),math.rad(127.87)),
-									["EasingDirection"] = Enum.EasingDirection.In
-								},
-								["Head"] = {
-									["EasingStyle"] = Enum.EasingStyle.Linear,
-									["Weight"] = 1,
-									["CFrame"] = CFrame.new(-0.05,-0.02,0) * CFrame.Angles(math.rad(21.72),math.rad(5.13),math.rad(18.28)),
-									["EasingDirection"] = Enum.EasingDirection.In
 								},
 								["Left Arm"] = {
 									["EasingStyle"] = Enum.EasingStyle.Linear,
 									["Weight"] = 1,
-									["CFrame"] = CFrame.Angles(math.rad(-53.41),math.rad(73.15),math.rad(62.81)),
-									["EasingDirection"] = Enum.EasingDirection.In
-								},
-								["Right Leg"] = {
-									["EasingStyle"] = Enum.EasingStyle.Linear,
-									["Weight"] = 1,
-									["CFrame"] = CFrame.new(0.72,1.36,-0.31) * CFrame.Angles(math.rad(-26.19),math.rad(-26.65),math.rad(2.64)),
+									["CFrame"] = CFrame.new(-0.06,-0.21,-0.14) * CFrame.Angles(math.rad(-50.61),math.rad(71.32),math.rad(50.65)),
 									["EasingDirection"] = Enum.EasingDirection.In
 								}
 							},
 							["EasingDirection"] = Enum.EasingDirection.In
 						}
 					},
-					["EasingDirection"] = Enum.EasingDirection.In
-				},
-				["MeshPart"] = {
-					["EasingStyle"] = Enum.EasingStyle.Linear,
-					["Weight"] = 1,
-					["CFrame"] = CFrame.new(1.69,-2.22,-0.75),
-					["EasingDirection"] = Enum.EasingDirection.In
-				}
-			},
-			["Markers"] = {}
-		},
-		[0] = {
-			["Poses"] = {
-				["HumanoidRootPart"] = {
-					["EasingStyle"] = Enum.EasingStyle.Linear,
-					["Weight"] = 0,
-					["CFrame"] = CFrame.new(),
-					["SubPoses"] = {
-						["Torso"] = {
-							["EasingStyle"] = Enum.EasingStyle.Linear,
-							["Weight"] = 1,
-							["CFrame"] = CFrame.new(-0,0,-0.13) * CFrame.Angles(math.rad(-2.83),math.rad(-3.13),math.rad(-25.56)),
-							["SubPoses"] = {
-								["Left Leg"] = {
-									["EasingStyle"] = Enum.EasingStyle.Linear,
-									["Weight"] = 1,
-									["CFrame"] = CFrame.new(0.32,0.09,-0.15) * CFrame.Angles(math.rad(-11.98),math.rad(51.01),math.rad(3.97)),
-									["EasingDirection"] = Enum.EasingDirection.In
-								},
-								["Right Arm"] = {
-									["EasingStyle"] = Enum.EasingStyle.Linear,
-									["Weight"] = 1,
-									["CFrame"] = CFrame.new(0.02,-0.3,0.52) * CFrame.Angles(math.rad(-67.46),math.rad(38.73),math.rad(134.12)),
-									["EasingDirection"] = Enum.EasingDirection.In
-								},
-								["Head"] = {
-									["EasingStyle"] = Enum.EasingStyle.Linear,
-									["Weight"] = 1,
-									["CFrame"] = CFrame.new(-0.06,-0.02,-0.16) * CFrame.Angles(math.rad(22.85),math.rad(2.77),math.rad(19.1)),
-									["EasingDirection"] = Enum.EasingDirection.In
-								},
-								["Left Arm"] = {
-									["EasingStyle"] = Enum.EasingStyle.Linear,
-									["Weight"] = 1,
-									["CFrame"] = CFrame.new(-0.05,-0.21,-0.12) * CFrame.Angles(math.rad(-54.46),math.rad(70.19),math.rad(52.12)),
-									["EasingDirection"] = Enum.EasingDirection.In
-								},
-								["Right Leg"] = {
-									["EasingStyle"] = Enum.EasingStyle.Linear,
-									["Weight"] = 1,
-									["CFrame"] = CFrame.new(0.73,1.36,-0.3) * CFrame.Angles(math.rad(-16.12),math.rad(-25.09),math.rad(-4.01)),
-									["EasingDirection"] = Enum.EasingDirection.In
-								}
-							},
-							["EasingDirection"] = Enum.EasingDirection.In
-						}
-					},
-					["EasingDirection"] = Enum.EasingDirection.In
-				},
-				["MeshPart"] = {
-					["EasingStyle"] = Enum.EasingStyle.Linear,
-					["Weight"] = 1,
-					["CFrame"] = CFrame.new(1.69,-2.26,-0.75),
 					["EasingDirection"] = Enum.EasingDirection.In
 				}
 			},
@@ -732,17 +744,17 @@ return {
 									["CFrame"] = CFrame.new(-0.05,-0.02,0.02) * CFrame.Angles(math.rad(23.6),math.rad(-0.08),math.rad(20.38)),
 									["EasingDirection"] = Enum.EasingDirection.In
 								},
-								["Left Arm"] = {
-									["EasingStyle"] = Enum.EasingStyle.Linear,
-									["Weight"] = 1,
-									["CFrame"] = CFrame.new(-0.09,-0.15,-0.16) * CFrame.Angles(math.rad(-43.13),math.rad(73.87),math.rad(48.97)),
-									["EasingDirection"] = Enum.EasingDirection.In
-								},
 								["Right Leg"] = {
 									["EasingStyle"] = Enum.EasingStyle.Linear,
 									["Weight"] = 1,
 									["CFrame"] = CFrame.new(0.73,1.25,-0.3) * CFrame.Angles(math.rad(-14.75),math.rad(-26.74),math.rad(3.04)),
 									["EasingDirection"] = Enum.EasingDirection.In
+								},
+								["Left Arm"] = {
+									["EasingStyle"] = Enum.EasingStyle.Linear,
+									["Weight"] = 1,
+									["CFrame"] = CFrame.new(-0.09,-0.15,-0.16) * CFrame.Angles(math.rad(-43.13),math.rad(73.87),math.rad(48.97)),
+									["EasingDirection"] = Enum.EasingDirection.In
 								}
 							},
 							["EasingDirection"] = Enum.EasingDirection.In
@@ -753,7 +765,7 @@ return {
 			},
 			["Markers"] = {}
 		},
-		[0.42] = {
+		[0] = {
 			["Poses"] = {
 				["HumanoidRootPart"] = {
 					["EasingStyle"] = Enum.EasingStyle.Linear,
@@ -763,87 +775,105 @@ return {
 						["Torso"] = {
 							["EasingStyle"] = Enum.EasingStyle.Linear,
 							["Weight"] = 1,
-							["CFrame"] = CFrame.new(0.36,0,-0.02) * CFrame.Angles(math.rad(-2.83),math.rad(-7.48),math.rad(-25.89)),
+							["CFrame"] = CFrame.new(-0,0,-0.13) * CFrame.Angles(math.rad(-2.83),math.rad(-3.13),math.rad(-25.56)),
 							["SubPoses"] = {
 								["Left Leg"] = {
 									["EasingStyle"] = Enum.EasingStyle.Linear,
 									["Weight"] = 1,
-									["CFrame"] = CFrame.new(0.33,-0.18,-0.17) * CFrame.Angles(math.rad(13.08),math.rad(51.8),math.rad(-7.95)),
+									["CFrame"] = CFrame.new(0.32,0.09,-0.15) * CFrame.Angles(math.rad(-11.98),math.rad(51.01),math.rad(3.97)),
+									["EasingDirection"] = Enum.EasingDirection.In
+								},
+								["Right Arm"] = {
+									["EasingStyle"] = Enum.EasingStyle.Linear,
+									["Weight"] = 1,
+									["CFrame"] = CFrame.new(0.02,-0.3,0.52) * CFrame.Angles(math.rad(-67.46),math.rad(38.73),math.rad(134.12)),
+									["EasingDirection"] = Enum.EasingDirection.In
+								},
+								["Head"] = {
+									["EasingStyle"] = Enum.EasingStyle.Linear,
+									["Weight"] = 1,
+									["CFrame"] = CFrame.new(-0.06,-0.02,-0.16) * CFrame.Angles(math.rad(22.85),math.rad(2.77),math.rad(19.1)),
 									["EasingDirection"] = Enum.EasingDirection.In
 								},
 								["Right Leg"] = {
 									["EasingStyle"] = Enum.EasingStyle.Linear,
 									["Weight"] = 1,
-									["CFrame"] = CFrame.new(0.72,1.25,-0.3) * CFrame.Angles(math.rad(-26.27),math.rad(-26.72),math.rad(2.85)),
-									["EasingDirection"] = Enum.EasingDirection.In
-								},
-								["Right Arm"] = {
-									["EasingStyle"] = Enum.EasingStyle.Linear,
-									["Weight"] = 1,
-									["CFrame"] = CFrame.new(-0.02,-0.33,0.44) * CFrame.Angles(math.rad(-55.25),math.rad(42.32),math.rad(131.2)),
-									["EasingDirection"] = Enum.EasingDirection.In
-								},
-								["Head"] = {
-									["EasingStyle"] = Enum.EasingStyle.Linear,
-									["Weight"] = 1,
-									["CFrame"] = CFrame.new(-0.04,-0.02,0.03) * CFrame.Angles(math.rad(18.63),math.rad(6.27),math.rad(18.21)),
-									["EasingDirection"] = Enum.EasingDirection.In
-								}
-							},
-							["EasingDirection"] = Enum.EasingDirection.In
-						}
-					},
-					["EasingDirection"] = Enum.EasingDirection.In
-				}
-			},
-			["Markers"] = {}
-		},
-		[0.45] = {
-			["Poses"] = {
-				["HumanoidRootPart"] = {
-					["EasingStyle"] = Enum.EasingStyle.Linear,
-					["Weight"] = 0,
-					["CFrame"] = CFrame.new(),
-					["SubPoses"] = {
-						["Torso"] = {
-							["EasingStyle"] = Enum.EasingStyle.Linear,
-							["Weight"] = 1,
-							["CFrame"] = CFrame.new(0.33,0,-0.05) * CFrame.Angles(math.rad(-2.85),math.rad(-8.07),math.rad(-25.8)),
-							["SubPoses"] = {
-								["Left Leg"] = {
-									["EasingStyle"] = Enum.EasingStyle.Linear,
-									["Weight"] = 1,
-									["CFrame"] = CFrame.new(0.33,-0.16,-0.17) * CFrame.Angles(math.rad(12.94),math.rad(51.8),math.rad(-7.9)),
-									["EasingDirection"] = Enum.EasingDirection.In
-								},
-								["Right Arm"] = {
-									["EasingStyle"] = Enum.EasingStyle.Linear,
-									["Weight"] = 1,
-									["CFrame"] = CFrame.new(-0.02,-0.32,0.44) * CFrame.Angles(math.rad(-52.38),math.rad(43.19),math.rad(130.01)),
-									["EasingDirection"] = Enum.EasingDirection.In
-								},
-								["Head"] = {
-									["EasingStyle"] = Enum.EasingStyle.Linear,
-									["Weight"] = 1,
-									["CFrame"] = CFrame.new(-0.04,-0.02,0.02) * CFrame.Angles(math.rad(19.64),math.rad(6.11),math.rad(18.15)),
+									["CFrame"] = CFrame.new(0.73,1.36,-0.3) * CFrame.Angles(math.rad(-16.12),math.rad(-25.09),math.rad(-4.01)),
 									["EasingDirection"] = Enum.EasingDirection.In
 								},
 								["Left Arm"] = {
 									["EasingStyle"] = Enum.EasingStyle.Linear,
 									["Weight"] = 1,
-									["CFrame"] = CFrame.new(-0.02,0,-0.03) * CFrame.Angles(math.rad(-55.76),math.rad(72.34),math.rad(62.31)),
-									["EasingDirection"] = Enum.EasingDirection.In
-								},
-								["Right Leg"] = {
-									["EasingStyle"] = Enum.EasingStyle.Linear,
-									["Weight"] = 1,
-									["CFrame"] = CFrame.new(0.72,1.29,-0.3) * CFrame.Angles(math.rad(-26.45),math.rad(-26.71),math.rad(2.81)),
+									["CFrame"] = CFrame.new(-0.05,-0.21,-0.12) * CFrame.Angles(math.rad(-54.46),math.rad(70.19),math.rad(52.12)),
 									["EasingDirection"] = Enum.EasingDirection.In
 								}
 							},
 							["EasingDirection"] = Enum.EasingDirection.In
 						}
 					},
+					["EasingDirection"] = Enum.EasingDirection.In
+				},
+				["MeshPart"] = {
+					["EasingStyle"] = Enum.EasingStyle.Linear,
+					["Weight"] = 1,
+					["CFrame"] = CFrame.new(1.69,-2.26,-0.75),
+					["EasingDirection"] = Enum.EasingDirection.In
+				}
+			},
+			["Markers"] = {}
+		},
+		[0.5] = {
+			["Poses"] = {
+				["HumanoidRootPart"] = {
+					["EasingStyle"] = Enum.EasingStyle.Linear,
+					["Weight"] = 0,
+					["CFrame"] = CFrame.new(),
+					["SubPoses"] = {
+						["Torso"] = {
+							["EasingStyle"] = Enum.EasingStyle.Linear,
+							["Weight"] = 1,
+							["CFrame"] = CFrame.new(0.28,0,-0.1) * CFrame.Angles(math.rad(-2.85),math.rad(-8.48),math.rad(-25.82)),
+							["SubPoses"] = {
+								["Left Leg"] = {
+									["EasingStyle"] = Enum.EasingStyle.Linear,
+									["Weight"] = 1,
+									["CFrame"] = CFrame.new(0.33,-0.1,-0.16) * CFrame.Angles(math.rad(11.07),math.rad(51.85),math.rad(-7)),
+									["EasingDirection"] = Enum.EasingDirection.In
+								},
+								["Right Arm"] = {
+									["EasingStyle"] = Enum.EasingStyle.Linear,
+									["Weight"] = 1,
+									["CFrame"] = CFrame.new(-0.02,-0.3,0.43) * CFrame.Angles(math.rad(-47.7),math.rad(44.51),math.rad(127.87)),
+									["EasingDirection"] = Enum.EasingDirection.In
+								},
+								["Head"] = {
+									["EasingStyle"] = Enum.EasingStyle.Linear,
+									["Weight"] = 1,
+									["CFrame"] = CFrame.new(-0.05,-0.02,0) * CFrame.Angles(math.rad(21.72),math.rad(5.13),math.rad(18.28)),
+									["EasingDirection"] = Enum.EasingDirection.In
+								},
+								["Right Leg"] = {
+									["EasingStyle"] = Enum.EasingStyle.Linear,
+									["Weight"] = 1,
+									["CFrame"] = CFrame.new(0.72,1.36,-0.31) * CFrame.Angles(math.rad(-26.19),math.rad(-26.65),math.rad(2.64)),
+									["EasingDirection"] = Enum.EasingDirection.In
+								},
+								["Left Arm"] = {
+									["EasingStyle"] = Enum.EasingStyle.Linear,
+									["Weight"] = 1,
+									["CFrame"] = CFrame.Angles(math.rad(-53.41),math.rad(73.15),math.rad(62.81)),
+									["EasingDirection"] = Enum.EasingDirection.In
+								}
+							},
+							["EasingDirection"] = Enum.EasingDirection.In
+						}
+					},
+					["EasingDirection"] = Enum.EasingDirection.In
+				},
+				["MeshPart"] = {
+					["EasingStyle"] = Enum.EasingStyle.Linear,
+					["Weight"] = 1,
+					["CFrame"] = CFrame.new(1.69,-2.22,-0.75),
 					["EasingDirection"] = Enum.EasingDirection.In
 				}
 			},
@@ -879,16 +909,16 @@ return {
 									["CFrame"] = CFrame.new(-0.04,-0.02,0.04) * CFrame.Angles(math.rad(18.75),math.rad(4.11),math.rad(18.97)),
 									["EasingDirection"] = Enum.EasingDirection.In
 								},
-								["Left Arm"] = {
-									["EasingStyle"] = Enum.EasingStyle.Linear,
-									["Weight"] = 1,
-									["CFrame"] = CFrame.new(-0.06,-0.03,-0.09) * CFrame.Angles(math.rad(-55.82),math.rad(71.87),math.rad(58.81)),
-									["EasingDirection"] = Enum.EasingDirection.In
-								},
 								["Right Leg"] = {
 									["EasingStyle"] = Enum.EasingStyle.Linear,
 									["Weight"] = 1,
 									["CFrame"] = CFrame.new(0.73,1.2,-0.29) * CFrame.Angles(math.rad(-23.3),math.rad(-26.69),math.rad(2.76)),
+									["EasingDirection"] = Enum.EasingDirection.In
+								},
+								["Left Arm"] = {
+									["EasingStyle"] = Enum.EasingStyle.Linear,
+									["Weight"] = 1,
+									["CFrame"] = CFrame.new(-0.06,-0.03,-0.09) * CFrame.Angles(math.rad(-55.82),math.rad(71.87),math.rad(58.81)),
 									["EasingDirection"] = Enum.EasingDirection.In
 								}
 							},
@@ -930,16 +960,16 @@ return {
 									["CFrame"] = CFrame.new(-0.04,-0.02,0.04) * CFrame.Angles(math.rad(22.41),math.rad(0.52),math.rad(20.16)),
 									["EasingDirection"] = Enum.EasingDirection.In
 								},
-								["Left Arm"] = {
-									["EasingStyle"] = Enum.EasingStyle.Linear,
-									["Weight"] = 1,
-									["CFrame"] = CFrame.new(-0.08,-0.12,-0.15) * CFrame.Angles(math.rad(-46.35),math.rad(73.48),math.rad(51.46)),
-									["EasingDirection"] = Enum.EasingDirection.In
-								},
 								["Right Leg"] = {
 									["EasingStyle"] = Enum.EasingStyle.Linear,
 									["Weight"] = 1,
 									["CFrame"] = CFrame.new(0.73,1.22,-0.29) * CFrame.Angles(math.rad(-16.62),math.rad(-26.76),math.rad(3.11)),
+									["EasingDirection"] = Enum.EasingDirection.In
+								},
+								["Left Arm"] = {
+									["EasingStyle"] = Enum.EasingStyle.Linear,
+									["Weight"] = 1,
+									["CFrame"] = CFrame.new(-0.08,-0.12,-0.15) * CFrame.Angles(math.rad(-46.35),math.rad(73.48),math.rad(51.46)),
 									["EasingDirection"] = Enum.EasingDirection.In
 								}
 							},
