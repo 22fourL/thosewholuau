@@ -26,7 +26,7 @@ function utils.getNearestHumanoidRootPartFromCharacter(fromCharacter: Model)
 end
 
 -- parent is optional, otherwise is global.
-function util.cloneAndPlay(sfx: Sound, optionalParent: Instance?)
+function utils.cloneAndPlay(sfx: Sound, optionalParent: Instance?)
 	local clone = sfx:Clone()
 	
 	if optionalParent then
@@ -40,7 +40,7 @@ function util.cloneAndPlay(sfx: Sound, optionalParent: Instance?)
 end
 
 -- returns whatever a basepart has hit, nil if none.
-function util.getPartThatTouched(objectPart: Part): Instance?
+function utils.getPartThatTouched(objectPart: Part): Instance?
 	local objecttable = workspace:GetPartBoundsInBox(objectPart.CFrame, objectPart.Size)
 	local humsHit = {}
 
@@ -61,7 +61,7 @@ end
 
 
 -- this only returns true if the part is a humanoidrootpart
-function util.isAchildOfACharacter(part: Part)
+function utils.isAchildOfACharacter(part: Part)
 	if part.Parent == nil then
 		return false
 	end
