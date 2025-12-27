@@ -1,25 +1,28 @@
 local utils = {}
 
--- returns nearest hrp and distance
-function utils.getNearestHumanoidRootPart(fromPosition)
-    local nearestHRP = nil
-    local shortestDistance = math.huge
+-- returns nearest hrp
+function utils.getNearestHumanoidRootPartFromCharacter(fromCharacter: Model)
+	local nearestHRP = nil
+	local shortestDistance = math.huge
+	
+	local charCFrame, charSize = fromCharacter:GetBoundingBox()
+	local fromPosition = charCFrame.Position
 
-    for _, model in ipairs(workspace:GetChildren()) do
-        local humanoid = model:FindFirstChildOfClass("Humanoid")
-        local hrp = model:FindFirstChild("HumanoidRootPart")
+	for _, model in ipairs(workspace:GetDescendants()) do
+		local humanoid = model:FindFirstChildOfClass("Humanoid")
+		local hrp = model:FindFirstChild("HumanoidRootPart")
 
-        if humanoid and hrp then
-            local distance = (hrp.Position - fromPosition).Magnitude
+		if humanoid and hrp and model ~= fromCharacter then
+			local distance = (hrp.Position - fromPosition).Magnitude
 
-            if distance < shortestDistance then
-                shortestDistance = distance
-                nearestHRP = hrp
-            end
-        end
-    end
+			if distance < shortestDistance then
+				shortestDistance = distance
+				nearestHRP = hrp
+			end
+		end
+	end
 
-    return nearestHRP, shortestDistance
+	return nearestHRP
 end
 
 return utils
