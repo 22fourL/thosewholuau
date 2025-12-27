@@ -1,5 +1,7 @@
+local utils = {}
+
 -- returns nearest hrp and distance
-local function getNearestHumanoidRootPart(fromPosition)
+function utils.getNearestHumanoidRootPart(fromPosition)
     local nearestHRP = nil
     local shortestDistance = math.huge
 
@@ -19,3 +21,5 @@ local function getNearestHumanoidRootPart(fromPosition)
 
     return nearestHRP, shortestDistance
 end
+
+return utils
